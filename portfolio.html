@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Steve Djoubi — Portfolio</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--text:#0f172a;--muted:#5b6475;--accent:#1d4ed8;--accent-soft:#e8efff;--line:#e2e6ee;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0f17;--card:#131a26;--text:#eef2f9;--muted:#9aa6bb;--accent:#6ea0ff;--accent-soft:#17233d;--line:#232d3f}}
+:root[data-theme="dark"]{--bg:#0b0f17;--card:#131a26;--text:#eef2f9;--muted:#9aa6bb;--accent:#6ea0ff;--accent-soft:#17233d;--line:#232d3f}
+html{scroll-padding-top:80px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{font-weight:700;letter-spacing:.3px}
+.links{display:flex;gap:22px}
+.links a{color:var(--muted);text-decoration:none;font-size:.93rem}
+.links a:hover{color:var(--accent)}
+.lang{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--card)}
+.lang button{border:0;background:transparent;color:var(--muted);padding:6px 11px;font:600 .8rem inherit;font-family:inherit;cursor:pointer}
+.lang button.on{background:var(--accent);color:#fff}
+@media(max-width:620px){.links{display:none}}
+.hero{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;padding:72px 0 48px}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.avatar{display:none}}
+.eyebrow{color:var(--accent);font-weight:600;font-size:.9rem;letter-spacing:.5px;text-transform:uppercase}
+h1{font-size:clamp(2.2rem,6vw,3.5rem);line-height:1.1;margin:10px 0 8px;letter-spacing:-.5px}
+.role{font-size:1.2rem;color:var(--muted);margin:0 0 18px}
+.lead{max-width:560px;color:var(--muted);margin:0 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:9px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid var(--line);color:var(--text);background:var(--card)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:#fff}
+.avatar{width:150px;height:150px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-size:3rem;font-weight:700;border:1px solid var(--line)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;margin:0 0 6px;letter-spacing:-.2px}
+.sub{color:var(--muted);margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font-size:1.1rem}
+.card p{margin:0;color:var(--muted);flex:1}
+.badge{align-self:flex-start;font-size:.75rem;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.card a.link{color:var(--accent);font-weight:600;text-decoration:none}
+.chips{display:flex;flex-wrap:wrap;gap:12px}.chip{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 20px;font-weight:600}
+.contact{text-align:center}
+.contact .card{align-items:center;padding:34px}
+.mail{font-size:1.25rem;font-weight:700;color:var(--accent);text-decoration:none;word-break:break-all}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap bar">
+<span class="logo">Steve Djoubi</span>
+<nav class="links"><a href="#about" data-i="nav_about"></a><a href="#projects" data-i="nav_projects"></a><a href="#skills" data-i="nav_skills"></a><a href="#education" data-i="nav_edu"></a><a href="#contact" data-i="nav_contact"></a></nav>
+<div class="lang"><button data-l="fr">FR</button><button data-l="en">EN</button><button data-l="tr">TR</button></div>
+</div></header>
+
+<main class="wrap">
+<div class="hero" id="about">
+<div>
+<div class="eyebrow" data-i="eyebrow"></div>
+<h1>Steve Djoubi</h1>
+<p class="role" data-i="role"></p>
+<p class="lead" data-i="lead"></p>
+<div class="btns">
+<a class="btn main" href="mailto:djoubisteve@gmail.com" data-i="cta_mail"></a>
+<a class="btn" href="https://github.com/djoubisteve-bit" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+<div class="avatar">SD</div>
+</div>
+
+<section id="projects">
+<h2 data-i="nav_projects"></h2>
+<p class="sub" data-i="proj_sub"></p>
+<div class="grid">
+<div class="card">
+<span class="badge" data-i="b_private"></span>
+<h3>Bien Vous Loger Pro</h3>
+<p data-i="p1"></p>
+</div>
+<div class="card">
+<span class="badge" data-i="b_team"></span>
+<h3>Africa Sport Edition</h3>
+<p data-i="p2"></p>
+<a class="link" href="https://github.com/ASEManagement/AFRICA-SPORT-EDITION" target="_blank" rel="noopener" data-i="repo"></a>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2 data-i="nav_skills"></h2>
+<p class="sub" data-i="skills_sub"></p>
+<div class="chips"><span class="chip">HTML / CSS</span><span class="chip">JavaScript</span><span class="chip">React</span></div>
+</section>
+
+<section id="education">
+<h2 data-i="nav_edu"></h2>
+<p class="sub" data-i="edu_sub"></p>
+<div class="card">
+<h3 data-i="degree"></h3>
+<p>Tokat Gaziosmanpaşa Üniversitesi — Tokat, <span data-i="country"></span></p>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 data-i="nav_contact"></h2>
+<p class="sub" data-i="contact_sub"></p>
+<div class="card">
+<a class="mail" href="mailto:djoubisteve@gmail.com">djoubisteve@gmail.com</a>
+<a class="link" href="https://github.com/djoubisteve-bit" target="_blank" rel="noopener">github.com/djoubisteve-bit</a>
+</div>
+</section>
+</main>
+<footer>© 2026 Steve Djoubi</footer>
+
+<script>
+var T={
+fr:{nav_about:"Accueil",nav_projects:"Projets",nav_edu:"Formation",nav_skills:"Compétences",skills_sub:"Technologies que j'utilise.",nav_contact:"Contact",eyebrow:"Portfolio",role:"Étudiant en génie informatique",lead:"Étudiant en 4ᵉ année à l'Université Tokat Gaziosmanpaşa. Je conçois des projets informatiques et je les publie sur GitHub.",cta_mail:"Me contacter",proj_sub:"Une sélection de mes projets.",b_private:"Dépôt privé",b_team:"Projet d'équipe",p1:"Site pour réserver ou payer un logement ou un terrain au Cameroun. Le code est privé : une présentation est possible sur demande.",p2:"Site / application qui met en relation les joueurs, les clubs et les questions d'argent dans le sport africain. Projet d'équipe de l'organisation ASEManagement.",repo:"Voir le dépôt →",edu_sub:"Mon parcours universitaire.",degree:"Licence en génie informatique (4ᵉ année)",country:"Turquie",contact_sub:"Une question, un projet, un stage ? Écrivez-moi."},
+en:{nav_about:"Home",nav_projects:"Projects",nav_edu:"Education",nav_skills:"Skills",skills_sub:"Technologies I work with.",nav_contact:"Contact",eyebrow:"Portfolio",role:"Computer engineering student",lead:"4th-year student at Tokat Gaziosmanpaşa University. I build software projects and publish them on GitHub.",cta_mail:"Get in touch",proj_sub:"A selection of my projects.",b_private:"Private repository",b_team:"Team project",p1:"Website to book or pay for housing or land in Cameroon. The code is private; a walkthrough is available on request.",p2:"Website / app connecting players, clubs and money matters in African sport. Team project of the ASEManagement organization.",repo:"View repository →",edu_sub:"My academic background.",degree:"B.Sc. in Computer Engineering (4th year)",country:"Turkey",contact_sub:"A question, a project, an internship? Write to me."},
+tr:{nav_about:"Ana Sayfa",nav_projects:"Projeler",nav_edu:"Eğitim",nav_skills:"Beceriler",skills_sub:"Kullandığım teknolojiler.",nav_contact:"İletişim",eyebrow:"Portfolyo",role:"Bilgisayar mühendisliği öğrencisi",lead:"Tokat Gaziosmanpaşa Üniversitesi 4. sınıf öğrencisiyim. Yazılım projeleri geliştiriyor ve GitHub'da paylaşıyorum.",cta_mail:"İletişime geç",proj_sub:"Projelerimden bir seçki.",b_private:"Özel depo",b_team:"Ekip projesi",p1:"Kamerun'da konut veya arsa rezervasyonu ve ödemesi yapmaya yarayan web sitesi. Kod özel; isteğe bağlı olarak sunum yapılabilir.",p2:"Afrika sporunda oyuncuları, kulüpleri ve para işlerini buluşturan web sitesi / uygulama. ASEManagement organizasyonunun ekip projesi.",repo:"Depoyu görüntüle →",edu_sub:"Akademik geçmişim.",degree:"Bilgisayar Mühendisliği Lisans (4. sınıf)",country:"Türkiye",contact_sub:"Bir soru, proje ya da staj mı? Bana yazın."}
+};
+function setLang(l){
+  var d=T[l]||T.fr;
+  document.documentElement.lang=l;
+  document.querySelectorAll("[data-i]").forEach(function(e){e.textContent=d[e.dataset.i]});
+  document.querySelectorAll(".lang button").forEach(function(b){b.classList.toggle("on",b.dataset.l===l)});
+  try{localStorage.setItem("lang",l)}catch(e){}
+}
+document.querySelectorAll(".lang button").forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
+var s=null;try{s=localStorage.getItem("lang")}catch(e){}
+var n=(navigator.language||"fr").slice(0,2);
+setLang(s||(T[n]?n:"fr"));
+</script>
+</body>
+</html>
